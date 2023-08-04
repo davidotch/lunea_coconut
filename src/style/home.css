@@ -1,0 +1,101 @@
+.home {
+  background: rgba(0, 0, 0, 0.2);
+  /* height: 100vh !important; */
+  width: 100%;
+  position: relative;
+}
+
+.home:before {
+  content: '';
+  background: url('../assets/joe-woods-4Zaq5xY5M_c-unsplash.jpg') no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.home .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.background {
+  width: 60%;
+  margin-top: 6rem;
+  border: 10px inset rgba(102, 102, 102, 0.8);
+  box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.description {
+  width: 70%;
+  margin: 1.5rem;
+  padding: 1.5rem;
+}
+
+.description h1 {
+  margin: 1rem;
+  padding: 1rem;
+  /* border-bottom: 1px solid #333; */
+}
+
+/* timeline */
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 40px 60px;
+}
+
+.timeline:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 50%;
+  width: 8px;
+  background: #666;
+  border-radius: 1px;
+  z-index: 1;
+}
+
+.timeline article {
+  position: relative;
+  width: calc(50% - 45px);
+}
+
+.timeline article+article {
+  margin-top: 20px;
+}
+
+.timeline article:nth-child(even) {
+  margin-left: calc(50% + 48px);
+}
+
+.timeline article:nth-child(even):before {
+  left: auto;
+  right: calc(100% + 32px);
+}
+
+.timeline article:nth-child(even):after {
+  left: auto;
+  right: 100%;
+  border-left: none;
+  border-right: 15px solid #eeeeee;
+}
+
+.board {
+  width: 100%;
+  border: 10px inset rgba(102, 102, 102, 0.8);
+  box-shadow: 5px 4px 20px rgba(0, 0, 0, 0.8);
+}
