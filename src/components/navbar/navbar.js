@@ -1,46 +1,65 @@
 import React, { useState } from 'react'
-import * as FaIcons from 'react-icons/fa'
-import * as AiIcons from 'react-icons/ai'
-import { Link } from 'react-router-dom'
-import { SidebarData } from './sidebarData'
+import { Link } from 'react-scroll'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import Logo from '../../assets/logo.jpg'
+import { HeaderData } from '../navbar/headerData'
 import '../../style/navbar.css'
-import { IconContext } from 'react-icons'
 
-function Navbar() {
-    const [sidebar, setSidebar] = useState(false)
+const Header = () => {
+    const [click, setClick] = useState(false)
+    const handleClick = () => setClick(!click)
 
-    const showSidebar = () => setSidebar(!sidebar)
+    const closeMenu = () => setClick(false)
+
+    // //change color scrolling header
+    // const [color, setColor] = useState(false)
+    // const changeColor = () => {
+    //     if (window.scrollY >= 90) {
+    //         setColor(true)
+    //     } else {
+    //         setColor(false)
+    //     }
+    // }
+
+    // window.addEventListener('scroll', changeColor)
 
     return (
-        <>
-            <IconContext.Provider value={{ color: '#fff' }}>
-                <div className="navbar">
-                    <Link to="#" className="menu-bars">
-                        <FaIcons.FaBars onClick={showSidebar} />
-                    </Link>
+        <div className="header header-color">
+            <nav className="navbar">
+                <Link
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}>
+                    <img className="logo" src={Logo} alt="logo" />
+                </Link>
+                <div className="hamburger" onClick={handleClick}>
+                    {click ? (
+                        <FaTimes size={30} style={{ color: '#ffffff' }} />
+                    ) : (
+                        <FaBars size={30} style={{ color: '#ffffff' }} />
+                    )}
                 </div>
-                <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-                    <ul className="nav-menu-items" onClick={showSidebar}>
-                        <li className="navbar-toggle">
-                            <Link to="#" className="menu-bars">
-                                <AiIcons.AiOutlineClose />
-                            </Link>
-                        </li>
-                        {SidebarData.map((item, index) => {
-                            return (
-                                <li key={index} className={item.cName}>
-                                    <Link to={item.path}>
-                                        {item.icon}
-                                        <span>{item.title}</span>
-                                    </Link>
-                                </li>
-                            )
-                        })}
-                    </ul>
-                </nav>
-            </IconContext.Provider>
-        </>
+                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                    {HeaderData.map((item, index) => {
+                        return (
+                            <li key={index} className={item.cName}>
+                                <Link
+                                    to={item.path}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={500}
+                                    onClick={closeMenu}>
+                                    <span>{item.title}</span>
+                                </Link>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </nav>
+        </div>
     )
 }
-
-export default Navbar
+export default Header
