@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 li {
     list-style-type: none;
 }
