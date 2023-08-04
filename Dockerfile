@@ -1,6 +1,6 @@
 
-# Use the official Node.js image as the base image
-FROM18 node:
+# Use the official Node.js v12 image as the base image
+FROM node:12
 
 # Set the working directory in the container
 WORKDIR /app
@@ -19,3 +19,4 @@ EXPOSE 3000
 
 # Define the entry point for the container
 CMD ["npm", "start"]
+# The error occurred because
