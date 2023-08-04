@@ -26,13 +26,13 @@ export default function sectionOne() {
                 </div>
                 <div className="timeline">
                     <article>
-                        <img className="board" src={bird} />
+                        <img className="board" src={bird} alt='un oiseau' />
                     </article>
                     <article>
-                        <img className="board" src={sea} />
+                        <img className="board" src={sea} alt='paysage marin' />
                     </article>
                     <article>
-                        <img className="board" src={nihghtAndDay} />
+                        <img className="board" src={nihghtAndDay} alt='nuit et jour' />
                     </article>
                 </div>
             </div>
