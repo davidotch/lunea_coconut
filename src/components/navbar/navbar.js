@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import Logo from '../../assets/logo.jpg'
 import { HeaderData } from '../navbar/headerData'
 import '../../style/navbar.css'
 
@@ -11,34 +10,23 @@ const Header = () => {
 
     const closeMenu = () => setClick(false)
 
-    // //change color scrolling header
-    // const [color, setColor] = useState(false)
-    // const changeColor = () => {
-    //     if (window.scrollY >= 90) {
-    //         setColor(true)
-    //     } else {
-    //         setColor(false)
-    //     }
-    // }
-
-    // window.addEventListener('scroll', changeColor)
-
     return (
         <div className="header header-color">
             <nav className="navbar">
                 <Link
+                    className="logo"
                     to="home"
                     spy={true}
                     smooth={true}
                     offset={-100}
                     duration={500}>
-                    <img className="logo" src={Logo} alt="logo" />
+                    Lunéa et Coconut
                 </Link>
                 <div className="hamburger" onClick={handleClick}>
                     {click ? (
-                        <FaTimes size={30} style={{ color: '#ffffff' }} />
+                        <FaTimes size={30} style={{ color: '#333' }} />
                     ) : (
-                        <FaBars size={30} style={{ color: '#ffffff' }} />
+                        <FaBars size={30} style={{ color: '#333' }} />
                     )}
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
