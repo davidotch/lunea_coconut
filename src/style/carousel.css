@@ -1,0 +1,51 @@
+.content {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.img {
+  display: flex;
+  margin: 2rem auto;
+  height: 40vh;
+  width: 70%;
+  border-radius: 1px;
+  object-fit: cover;
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 4rem;
+  width: 100%;
+  height: 80vh;
+  border-color: #fff;
+}
+
+.title {
+  margin-left: 50px;
+  width: 70%;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+}
+
+.slick-prev {
+  top: 160px !important;
+  left: 40px !important;
+  z-index: 1;
+}
+
+.slick-next {
+  top: 160px !important;
+  right: 60px !important;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  content: "" !important;
+}
+
+.next-slick-arrow,
+.prev-slick-arrow {
+  color: #333;
+  font-size: 40px;
+}
