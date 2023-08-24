@@ -1,13 +1,15 @@
 const Images = [
     {
         id: 1,
-        cover: 'images/background-home.jpg',
+        cover: '../images/background-home.jpg',
         alt: 'Image 1',
         title: 'bouddha',
+        hover_cover: '../images/mer.jpg',
+        description: '30 x 40',
     },
     {
         id: 2,
-        cover: 'images/mer.jpg',
+        cover: '../images/mer.jpg',
         alt: 'Image 2 ',
         title: 'Paysage marin',
     },
