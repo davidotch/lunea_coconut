@@ -9,7 +9,7 @@ import '../../style/carousel.css'
 export default function Carousel() {
     const settings = {
         centerMode: true,
-        centerPadding: "60px",
+        centerPadding: '60px',
         // dots: true,
         infinite: true,
         speed: 500,
@@ -17,12 +17,16 @@ export default function Carousel() {
         slidesToScroll: 1,
         nextArrow: (
             <div>
-                <div className="next-slick-arrow"><GrNext /></div>
+                <div className="next-slick-arrow">
+                    <GrNext />
+                </div>
             </div>
         ),
         prevArrow: (
             <div>
-                <div className="prev-slick-arrow"><GrPrevious /></div>
+                <div className="prev-slick-arrow">
+                    <GrPrevious />
+                </div>
             </div>
         ),
         responsive: [
@@ -64,8 +68,17 @@ export default function Carousel() {
                                     src={item.cover}
                                     alt={item.alt}
                                     className="img"
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.src = item.hover_cover
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.src = item.cover
+                                    }}
                                 />
-                                <h2 className="title">{item.title}</h2>
+                                <p className="description">{item.title}</p>
+                                <p className="description">
+                                    {item.description}
+                                </p>
                             </div>
                         ))}
                     </Slider>
