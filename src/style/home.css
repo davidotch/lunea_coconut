@@ -8,7 +8,7 @@
 
 .home:before {
   content: '';
-  background: url('../assets/Peaceful_living_room_Wall\ \(3\).jpg') no-repeat center/cover;
+  background: url('../assets/images/background-home.jpg') no-repeat center/cover;
   height: 100%;
   width: 100%;
   position: fixed;
