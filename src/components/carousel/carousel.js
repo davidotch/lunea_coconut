@@ -47,7 +47,7 @@ export default function Carousel() {
             {
                 breakpoint: 768,
                 settings: {
-                    dots: true,
+                    // dots: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                 },
@@ -58,6 +58,7 @@ export default function Carousel() {
                     dots: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    arrow: false,
                 },
             },
         ],
@@ -65,6 +66,7 @@ export default function Carousel() {
 
     return (
         <>
+        <span id='carousel'></span>
             <div className="content">
                 <div className="container">
                     <Slider {...settings}>
