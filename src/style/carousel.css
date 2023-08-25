@@ -9,9 +9,9 @@
   height: 40vh;
   width: 70%;
   border-radius: 1px;
-  object-fit: cover;
-  cursor: pointer;
-  transition: 0.5s ease-out;
+  object-fit: contain;
+  /* cursor: pointer; */
+  
 }
 
 .container {
@@ -19,7 +19,7 @@
   padding-top: 4rem;
   width: 100%;
   height: 80vh;
-  border-color: #fff;
+  border-color: #333;
 }
 
 .description {
@@ -30,13 +30,13 @@
 
 .slick-prev {
   top: 160px !important;
-  left: 40px !important;
+  left: 20px !important;
   z-index: 1;
 }
 
 .slick-next {
   top: 160px !important;
-  right: 60px !important;
+  right: 40px !important;
 }
 
 .slick-next:before,
