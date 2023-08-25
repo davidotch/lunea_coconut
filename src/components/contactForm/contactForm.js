@@ -21,9 +21,6 @@ function contact() {
                 <label for="name">Votre nom:</label>
                 <input type="text" name="name" />
 
-                <label for="name">Votre prénom:</label>
-                <input type="text" name="name" />
-
                 <label for="email">Email: </label>
                 <input type="email" name="email" />
 
