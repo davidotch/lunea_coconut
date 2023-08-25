@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -7,14 +7,20 @@ import Images from './images'
 import '../../style/carousel.css'
 
 export default function Carousel() {
+    const [hoveredId, setHoveredId] = useState(null)
+
+    const handleHover = (id) => {
+        setHoveredId(id)
+    }
+
     const settings = {
-        centerMode: true,
-        centerPadding: '60px',
         // dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        focusOnSelect: false,
+        // fade: true,
         nextArrow: (
             <div>
                 <div className="next-slick-arrow">
@@ -65,15 +71,15 @@ export default function Carousel() {
                         {Images.map((item) => (
                             <div key={item.id}>
                                 <img
-                                    src={item.cover}
+                                    src={
+                                        hoveredId === item.id
+                                            ? item.hovered
+                                            : item.cover
+                                    }
                                     alt={item.alt}
                                     className="img"
-                                    onMouseEnter={(e) => {
-                                        e.currentTarget.src = item.hover_cover
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        e.currentTarget.src = item.cover
-                                    }}
+                                    onMouseEnter={() => handleHover(item.id)}
+                                    onMouseLeave={() => handleHover(null)}
                                 />
                                 <p className="description">{item.title}</p>
                                 <p className="description">
