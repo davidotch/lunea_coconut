@@ -6,12 +6,12 @@ export const HeaderData = [
     },
     {
         title: 'Gallerie',
-        path: '/Gallery',
+        path: 'carousel',
         cName: 'nav-item',
     },
     {
         title: 'Contact',
-        path: '/Contact',
+        path: 'contact',
         cName: 'nav-item',
     },
 ]
