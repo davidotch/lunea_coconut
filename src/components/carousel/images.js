@@ -4,7 +4,7 @@ const Images = [
         cover: '../images/background-home.jpg',
         alt: 'Image 1',
         title: 'bouddha',
-        hover_cover: '../images/mer.jpg',
+        hovered: '../images/mer.jpg',
         description: '30 x 40',
     },
     {
