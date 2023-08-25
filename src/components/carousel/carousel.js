@@ -69,7 +69,7 @@ export default function Carousel() {
                 <div className="container">
                     <Slider {...settings}>
                         {Images.map((item) => (
-                            <div key={item.id}>
+                            <div key={item.id} className="img-container">
                                 <img
                                     src={
                                         hoveredId === item.id
