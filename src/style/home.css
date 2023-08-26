@@ -1,7 +1,8 @@
 .home {
   color: #fff;
-  height: 90vh !important;
+  height: 100vh !important;
   width: 100%;
+  position: relative;
 }
 
 .home:before {
