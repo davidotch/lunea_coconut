@@ -1,21 +1,59 @@
 .contact {
   width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin: 5rem auto;
   padding: 1rem;
   background: rgba(255, 255, 255, 1);
 }
 
+.contactText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.contactText h1 {
+  margin: 1rem;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+  border-bottom: 1px solid #333;
+}
+
+.contactText p {
+  margin: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+
 .contactForm {
   width: 40%;
   display: flex;
   flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.contactForm [placeholder] {
+  font-family: 'Poppins', sans-serif;
+}
+
+.contactForm input,
+.contactForm textarea {
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+.contactForm textarea {
+  height: 125px;
 }
 
 .contactForm input,
 .contactForm textarea,
 .contactForm button {
-  margin: 0.3rem 0 1rem 0;
+  margin: 0rem 0 1rem 0;
   padding: 1rem;
 }
