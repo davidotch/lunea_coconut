@@ -1,11 +1,12 @@
 .content {
+  height: 100vh;
   text-align: center;
   background-color: rgba(255, 255, 255, 1);
 }
 
 .container {
-  margin: auto;
-  padding-top: 10rem;
+  /* margin: auto; */
+  padding-top: 7rem;
   width: 100%;
   height: 100vh;
 }
@@ -17,17 +18,17 @@ img-container {
 .img {
   display: flex;
   margin: 2rem auto;
-  height: 40vh;
-  width: 70%;
-  border-radius: 1px;
+  height: 50vh;
+  width: 80%;
+  /* border-radius: 3px; */
   object-fit: contain;
-  opacity: 1;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
   transition: transform 0.4s ease-in-out, opacity 0.8s ease-in-out;
 }
 
 img:hover {
-  transform: scale(1.1);
-  opacity: 0.9;
+  object-fit: contain;
+  transform: scale(1.05);
 }
 
 .description {
@@ -36,7 +37,14 @@ img:hover {
   font-weight: lighter;
 }
 
-.slick-prev {
+.slick-dots li button:before {
+  font-size: 0.5rem;
+  line-height: 4rem;
+}
+
+/* ----------Arrow---------- */
+
+/* .slick-prev {
   top: 160px !important;
   left: 20px !important;
   z-index: 1;
@@ -56,4 +64,4 @@ img:hover {
 .prev-slick-arrow {
   color: #333;
   font-size: 40px;
-}
+} */
