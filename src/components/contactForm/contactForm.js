@@ -10,22 +10,22 @@ function contact() {
                     Vous êtes intéressé ? Vous avez une question, une suggestion
                     ?
                 </p>
+                <p>Contactez-moi pour en savoir plus.</p>
             </div>
             <form
                 name="contact"
                 method="POST"
                 className="contactForm"
-                data-netlify="true"
-                onSubmit="submit">
+                data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
-                <label for="name">Votre nom:</label>
-                <input type="text" name="name" />
+                {/* <label>Votre nom:</label> */}
+                <input type="text" name="name" placeholder="Nom" />
 
-                <label for="email">Email: </label>
-                <input type="email" name="email" />
+                {/* <label>Email:</label> */}
+                <input type="email" name="email" placeholder="E-mail" />
 
-                <label for="message">Message:</label>
-                <textarea name="message"></textarea>
+                {/* <label>Message:</label> */}
+                <textarea name="message" placeholder="Message"></textarea>
 
                 <button type="submit">Envoyer</button>
             </form>
