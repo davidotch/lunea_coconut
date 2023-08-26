@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { GrPrevious, GrNext } from 'react-icons/gr'
+// import { GrPrevious, GrNext } from 'react-icons/gr'
 import Images from './images'
 import '../../style/carousel.css'
 
@@ -14,27 +14,13 @@ export default function Carousel() {
     }
 
     const settings = {
-        // dots: true,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        focusOnSelect: false,
-        // fade: true,
-        nextArrow: (
-            <div>
-                <div className="next-slick-arrow">
-                    <GrNext />
-                </div>
-            </div>
-        ),
-        prevArrow: (
-            <div>
-                <div className="prev-slick-arrow">
-                    <GrPrevious />
-                </div>
-            </div>
-        ),
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [
             {
                 breakpoint: 998,
@@ -58,7 +44,6 @@ export default function Carousel() {
                     dots: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrow: false,
                 },
             },
         ],
@@ -66,9 +51,8 @@ export default function Carousel() {
 
     return (
         <>
-        <span id='carousel'></span>
             <div className="content">
-                <div className="container">
+                <div className="container" id="carousel">
                     <Slider {...settings}>
                         {Images.map((item) => (
                             <div key={item.id} className="img-container">
