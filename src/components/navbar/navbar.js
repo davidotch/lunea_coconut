@@ -18,7 +18,7 @@ const Header = () => {
                     to="home"
                     spy={true}
                     smooth={true}
-                    offset={-100}
+                    offset={-50}
                     duration={500}>
                     Lunéa et Coconut
                 </Link>
@@ -37,7 +37,7 @@ const Header = () => {
                                     to={item.path}
                                     spy={true}
                                     smooth={true}
-                                    offset={-50}
+                                    offset={10}
                                     duration={500}
                                     onClick={closeMenu}>
                                     <span>{item.title}</span>
