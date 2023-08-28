@@ -5,11 +5,6 @@ export const HeaderData = [
         cName: 'nav-item',
     },
     {
-        title: 'Biographie',
-        path: '/gallery',
-        cName: 'nav-item',
-    },
-    {
         title: 'Créations',
         path: 'carousel',
         cName: 'nav-item',
