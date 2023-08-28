@@ -18,7 +18,7 @@ const Header = () => {
                     to="home"
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-100}
                     duration={500}>
                     Lunéa et Coconut
                 </Link>
