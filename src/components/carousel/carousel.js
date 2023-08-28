@@ -26,22 +26,22 @@ export default function Carousel() {
                 breakpoint: 998,
                 settings: {
                     dots: true,
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                 },
             },
             {
                 breakpoint: 768,
                 settings: {
-                    // dots: true,
-                    slidesToShow: 1,
+                    dots: false,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 },
             },
             {
                 breakpoint: 480,
                 settings: {
-                    dots: true,
+                    dots: false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                 },
@@ -53,6 +53,7 @@ export default function Carousel() {
         <>
             <div className="content">
                 <div className="container" id="carousel">
+                    <h1>Mes Créations</h1>
                     <Slider {...settings}>
                         {Images.map((item) => (
                             <div key={item.id} className="img-container">
