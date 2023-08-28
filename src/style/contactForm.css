@@ -8,9 +8,11 @@
 }
 
 .contactText {
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   padding: 0.8rem;
 }
 
@@ -39,6 +41,7 @@
 
 .contactForm [placeholder] {
   font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
 }
 
 .contactForm input,
@@ -56,4 +59,20 @@
 .contactForm button {
   margin: 0rem 0 1rem 0;
   padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .contactText {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .contactForm {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
