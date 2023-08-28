@@ -10,7 +10,10 @@ export default function home() {
                     {SocialList.map((item, index) => {
                         return (
                             <li key={index} className={item.cName}>
-                                <a href={item.path}>
+                                <a
+                                    href={item.path}
+                                    target="_blank"
+                                    rel="noreferrer">
                                     <span>{item.title}</span>
                                     {item.icon}
                                 </a>
