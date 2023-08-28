@@ -16,3 +16,13 @@ li {
 a {
     text-decoration: none;
 }
+
+h1 {
+    padding: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 3rem;
+    text-decoration: underline solid 1px;
+    font-family: 'Great Vibes', sans-serif;
+}
