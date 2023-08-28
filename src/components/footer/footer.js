@@ -15,7 +15,7 @@ export default function footer() {
                         href="https://www.facebook.com/profile.php?id=100093448566259"
                         target="_blank"
                         rel="noreferrer">
-                        <FaFacebookSquare size={35} />
+                        <FaFacebookSquare size={35} color="#3b5998" />
                     </a>
                 </li>
                 <li>
@@ -23,12 +23,12 @@ export default function footer() {
                         href="https://www.instagram.com/luneaetcoconut/"
                         target="_blank"
                         rel="noreferrer">
-                        <FaInstagramSquare size={35} />
+                        <FaInstagramSquare size={35} color="#c13584" />
                     </a>
                 </li>
                 <li>
                     <a href="mailto:luneaetcoconut@hotmail.com">
-                        <FaEnvelopeSquare size={35} />
+                        <FaEnvelopeSquare size={35} color="#6fc2b0" />
                     </a>
                 </li>
             </ul>
