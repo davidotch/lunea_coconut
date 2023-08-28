@@ -9,11 +9,10 @@ import {
 export default function footer() {
     return (
         <div className="footer">
-            <p>2023 | Lunéa et Coconut | All rights reserved </p>
             <ul>
                 <li>
                     <a
-                        href="https://www.facebook.com/"
+                        href="https://www.facebook.com/profile.php?id=100093448566259"
                         target="_blank"
                         rel="noreferrer">
                         <FaFacebookSquare size={35} />
@@ -21,7 +20,7 @@ export default function footer() {
                 </li>
                 <li>
                     <a
-                        href="https://www.instagram.com/"
+                        href="https://www.instagram.com/luneaetcoconut/"
                         target="_blank"
                         rel="noreferrer">
                         <FaInstagramSquare size={35} />
@@ -33,6 +32,7 @@ export default function footer() {
                     </a>
                 </li>
             </ul>
+            <p>2023 | Lunéa et Coconut | All rights reserved </p>
         </div>
     )
 }
