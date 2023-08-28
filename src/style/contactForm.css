@@ -16,14 +16,6 @@
   padding: 0.8rem;
 }
 
-.contactText h1 {
-  margin: 1rem;
-  text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
-  font-weight: lighter;
-  border-bottom: 1px solid #333;
-}
-
 .contactText p {
   margin: 1rem;
   font-family: 'Poppins', sans-serif;
