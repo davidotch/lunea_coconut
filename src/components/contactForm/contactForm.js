@@ -3,7 +3,7 @@ import '../../style/contactForm.css'
 
 function contact() {
     return (
-        <div className="contact">
+        <div className="contact" id="contact">
             <div className="contactText">
                 <h1>contact</h1>
                 <p>
@@ -11,6 +11,7 @@ function contact() {
                     ?
                 </p>
                 <p>Contactez-moi pour en savoir plus.</p>
+                <p>luneaetcoconut@hotmail.com</p>
             </div>
             <form
                 name="contact"
@@ -18,15 +19,9 @@ function contact() {
                 className="contactForm"
                 data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
-                {/* <label>Votre nom:</label> */}
                 <input type="text" name="name" placeholder="Nom" />
-
-                {/* <label>Email:</label> */}
                 <input type="email" name="email" placeholder="E-mail" />
-
-                {/* <label>Message:</label> */}
                 <textarea name="message" placeholder="Message"></textarea>
-
                 <button type="submit">Envoyer</button>
             </form>
         </div>
