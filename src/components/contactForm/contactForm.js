@@ -18,10 +18,10 @@ function contact() {
                 method="POST"
                 className="contactForm"
                 data-netlify="true">
-                <input type="hidden" name="form-name" value="contact" />
-                <input type="text" name="name" placeholder="Nom" />
+                <input type="hidden" name="form-name" value="contact" required />
+                <input type="text" name="name" placeholder="Nom" required />
                 <input type="email" name="email" placeholder="E-mail" />
-                <textarea name="message" placeholder="Message"></textarea>
+                <textarea name="message" placeholder="Message" required></textarea>
                 <button type="submit">Envoyer</button>
             </form>
         </div>
