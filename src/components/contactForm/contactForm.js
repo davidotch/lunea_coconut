@@ -20,7 +20,7 @@ function contact() {
                 data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" required />
                 <input type="text" name="name" placeholder="Nom" required />
-                <input type="email" name="email" placeholder="E-mail" />
+                <input type="email" name="email" placeholder="E-mail" required />
                 <textarea name="message" placeholder="Message" required></textarea>
                 <button type="submit">Envoyer</button>
             </form>
