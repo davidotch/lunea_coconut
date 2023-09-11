@@ -1,5 +1,4 @@
 .containerForm {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +7,6 @@
 
 .contact {
   width: 80%;
-  height: 60vh;
   margin: 7rem 0rem;
   padding: 1rem;
   display: flex;
@@ -72,4 +70,32 @@
 
 .contact-form [placeholder] {
   font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+
+  .contact-txt {
+    width: 100%;
+    padding: 0;
+  }
+
+  .contact-txt h1 {
+    margin: 1rem;
+    font-size: 2.3rem;
+  }
+
+  .contact-txt p {
+    margin: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
