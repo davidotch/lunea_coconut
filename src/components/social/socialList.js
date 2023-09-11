@@ -13,10 +13,4 @@ export const SocialList = [
         cName: 'social-list',
         icon: <FaIcons.FaInstagram color="#fff" size={30} />,
     },
-    // {
-    //     title: 'Contact',
-    //     path: 'mailto:luneaetcoconut@hotmail.com',
-    //     cName: 'social-list',
-    //     icon: <FaIcons.FaEnvelope color="#fff" size={30} />,
-    // },
 ]

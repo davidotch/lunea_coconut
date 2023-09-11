@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { HeaderData } from '../navbar/headerData'
 import '../../style/navbar.css'
@@ -11,15 +11,11 @@ const Header = () => {
     const closeMenu = () => setClick(false)
 
     return (
-        <div className="header header-color">
+        <div className="header">
             <nav className="navbar">
                 <Link
                     className="logo"
-                    to="home"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={500}>
+                    to="/">
                     Lunéa et Coconut
                 </Link>
                 <div className="hamburger" onClick={handleClick}>
@@ -35,10 +31,6 @@ const Header = () => {
                             <li key={index} className={item.cName}>
                                 <Link
                                     to={item.path}
-                                    spy={true}
-                                    smooth={true}
-                                    offset={10}
-                                    duration={500}
                                     onClick={closeMenu}>
                                     <span>{item.title}</span>
                                 </Link>

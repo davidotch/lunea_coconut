@@ -1,62 +1,31 @@
-.home {
+.section-home {
   color: #fff;
   height: 100vh !important;
   width: 100%;
-  position: relative;
+  background: url(../assets/images/background-home.jpg) no-repeat center center/cover !important;
 }
 
-.home:before {
-  content: '';
-  background: url('../assets/images/background-home.jpg') no-repeat center/cover;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.home .social {
-  display: none;
+.section-ht {
   display: flex;
-  position: fixed;
-  flex-direction: column;
-  top: 35%;
-  left: 0;
-  z-index: 1;
-}
-
-.home .social ul li {
-  width: 160px;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-left: -100px;
-  transition: 300ms;
+  text-align: center;
+  background: url(../assets/images/pexels-cottonbro-studio-3779077.jpg) no-repeat center center/cover;
 }
 
-.home .social ul li:first-child {
-  background-color: #3b5998;
+.container-ht {
+  width: 70%;
+  margin: 5rem 0;
+  padding: 1rem;
+  border-radius: 3px;
+  background-color: rgba(248, 248, 248, 0.9);
 }
 
-.home .social ul li:nth-child(2) {
-  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+.container-ht h1 {
+  margin: 4rem;
 }
 
-.home .social ul li:nth-child(3) {
-  background-color: #6fc2b0;
-}
-
-.home .social ul li:hover {
-  margin-left: -10px;
-}
-
-.home .social ul li a {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  color: #fff;
-  font-family: 'poppins', sans-serif;
+.container-ht p {
+  margin: 2rem 6rem;
+  font-family: 'Poppins', sans-serif;
 }

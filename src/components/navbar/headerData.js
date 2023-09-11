@@ -1,17 +1,22 @@
 export const HeaderData = [
     {
         title: 'Acceuil',
-        path: 'home',
+        path: '/',
         cName: 'nav-item',
     },
     {
-        title: 'Créations',
-        path: 'carousel',
+        title: 'Shop',
+        path: '/shop',
+        cName: 'nav-item',
+    },
+    {
+        title: 'A propos',
+        path: '/about',
         cName: 'nav-item',
     },
     {
         title: 'Contact',
-        path: 'contact',
+        path: '/contact',
         cName: 'nav-item',
     },
 ]

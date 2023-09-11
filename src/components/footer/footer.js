@@ -44,7 +44,7 @@ export default function footer() {
                     </a>
                 </li>
             </ul>
-            <p>2023 | Lunéa et Coconut | All rights reserved </p>
+            <p>&copy; Copyright 2023 - Lunéa et Coconut - Tous droits réservés.</p>
         </div>
     )
 }

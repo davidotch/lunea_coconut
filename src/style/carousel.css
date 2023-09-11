@@ -6,9 +6,12 @@
 }
 
 .container {
-  width: 90%;
-  height: 100vh;
+  width: 85%;
+  /* height: 100vh; */
   margin: 0 auto;
+}
+.container h1 {
+  margin: 5rem 0;
 }
 
 img-container {
@@ -17,8 +20,8 @@ img-container {
 
 .img {
   display: flex;
-  margin: 2rem auto;
-  height: 50vh;
+  margin: 0 auto;
+  height: 55vh;
   width: 80%;
   object-fit: contain;
   transition: transform 0.4s ease-in-out, opacity 0.8s ease-in-out;
