@@ -72,3 +72,9 @@ img:hover {
   font-size: 40px;
 } */
 
+@media screen and (max-width:768px) {
+  .container h1 {
+    margin: 3rem 0;
+  }
+}
+

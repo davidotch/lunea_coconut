@@ -27,5 +27,23 @@
 
 .container-ht p {
   margin: 2rem 6rem;
+  line-height: 2;
   font-family: 'Poppins', sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+  .container-ht {
+    margin: 4rem 0;
+    padding: 0;
+  }
+
+  .container-ht h1 {
+    margin: 2rem;
+  }
+
+  .container-ht P {
+    margin: 1rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
