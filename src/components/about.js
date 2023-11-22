@@ -1,6 +1,6 @@
 import React from 'react'
-import '../../style/about.css'
-import Transition from '../../transition'
+import '../style/about.css'
+import Transition from '../transition'
 
 const about = () => {
     return (

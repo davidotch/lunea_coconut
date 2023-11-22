@@ -1,6 +1,6 @@
 import React from 'react'
-import { SocialList } from '../social/socialList'
-import '../../style/social.css'
+import { SocialList } from './datas/socialList'
+import '../style/social.css'
 
 const social = () => {
     return (

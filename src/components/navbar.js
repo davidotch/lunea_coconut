@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { HeaderData } from '../navbar/headerData'
-import '../../style/navbar.css'
+import { HeaderData } from './datas/headerData'
+import '../style/navbar.css'
 
 const Header = () => {
     const [click, setClick] = useState(false)
@@ -13,9 +13,7 @@ const Header = () => {
     return (
         <div className="header">
             <nav className="navbar">
-                <Link
-                    className="logo"
-                    to="/">
+                <Link className="logo" to="/">
                     Lunéa et Coconut
                 </Link>
                 <div className="hamburger" onClick={handleClick}>
@@ -29,9 +27,7 @@ const Header = () => {
                     {HeaderData.map((item, index) => {
                         return (
                             <li key={index} className={item.cName}>
-                                <Link
-                                    to={item.path}
-                                    onClick={closeMenu}>
+                                <Link to={item.path} onClick={closeMenu}>
                                     <span>{item.title}</span>
                                 </Link>
                             </li>

@@ -1,4 +1,5 @@
 .containerForm {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,7 +8,8 @@
 
 .contact {
   width: 80%;
-  margin: 7rem 0rem;
+  height: 60vh;
+  margin: auto;
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -33,7 +35,7 @@
 }
 
 .contact-form {
-  width: 40%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   margin: 1rem;
@@ -43,9 +45,9 @@
 .contact-form input,
 .contact-form textarea,
 .contact-form button {
-  margin: 0rem 0rem 1rem 0rem;
+  margin: 0rem 0rem 1.5rem 0rem;
   padding: 1rem;
-  background-color: rgba(248, 248, 248, 0.9);
+  background-color: rgba(248, 248, 248, 1);
   border-radius: 3px;
 }
 

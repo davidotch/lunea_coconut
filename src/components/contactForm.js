@@ -1,6 +1,6 @@
 import React from 'react'
-import Transition from '../../transition'
-import '../../style/contactForm.css'
+import Transition from '../transition'
+import '../style/contactForm.css'
 
 const contact = () => {
     return (

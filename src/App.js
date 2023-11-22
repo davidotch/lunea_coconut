@@ -2,12 +2,12 @@ import React from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 
-import Navbar from './components/navbar/navbar'
-import Home from './components/home/home'
-import Shop from './components/shop/shop'
-import About from './components/about/about'
-import Contact from './components/contactForm/contactForm'
-import Footer from './components/footer/footer'
+import Navbar from './components/navbar'
+import Home from './components/home'
+import Shop from './components/shop'
+import About from './components/about'
+import Contact from './components/contactForm'
+import Footer from './components/footer'
 
 function App() {
     const location = useLocation()

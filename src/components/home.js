@@ -1,9 +1,9 @@
 import React from 'react'
-import transition from '../../transition'
-import Social from '../social/social'
-import '../../style/home.css'
+import transition from '../transition'
+import Social from './social'
+import '../style/home.css'
 
-import Carousel from '../carousel/carousel'
+import Carousel from './carousel'
 
 const home = () => {
     return (
