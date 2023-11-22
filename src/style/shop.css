@@ -1,9 +1,11 @@
-h2 {
-  width: 100%;
+.shop-content {
+  height: 100vh;
+  padding: 2rem;
   text-align: center;
-  font-weight: 500;
-  font-size: 5vw;
-  line-height: 1;
-  text-transform: uppercase;
-  padding: 10rem;
+}
+
+.shop-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
