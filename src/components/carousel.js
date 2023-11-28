@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import Modal from './subComponents/modal'
-import Images from './datas/images'
+import Images from './datas/imagesCarousel'
 import '../style/carousel.css'
 
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
