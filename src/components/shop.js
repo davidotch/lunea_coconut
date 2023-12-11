@@ -4,13 +4,13 @@ import '../style/shop.css'
 import Transition from '../transition'
 import Modal from '../components/subComponents/modal'
 
-import Images from './datas/imagesShop'
+import Collections from './datas/imagesShop' // Importez Collections
 
 const Shop = () => {
   const [selectedImage, setSelectedImage] = useState(null)
 
-  const handleOpenModal = (index) => {
-    setSelectedImage(Images[index])
+  const handleOpenModal = (collectionIndex, imageIndex) => {
+    setSelectedImage(Collections[collectionIndex].images[imageIndex]) // Utilisez Collections
   }
 
   const handleCloseModal = () => {
@@ -19,19 +19,23 @@ const Shop = () => {
 
   return (
     <div className="shop-content">
-      <h1>Nostalgie d'été</h1>
-      <div className="shop-card">
-        {Images &&
-          Images.map((item, index) => (
-            <Card
-              key={index}
-              onClick={() => handleOpenModal(index)}
-              cover={item.cover}
-              title={item.title}
-              description={item.description}
-            />
-          ))}
-      </div>
+      {Collections.map((collection, collectionIndex) => (
+        <div key={collectionIndex}>
+          <h1>{collection.title}</h1> {/* Affichez le titre de la collection */}
+          <div className="shop-card">
+            {collection.images &&
+              collection.images.map((item, imageIndex) => (
+                <Card
+                  key={imageIndex}
+                  onClick={() => handleOpenModal(collectionIndex, imageIndex)}
+                  cover={item.cover}
+                  title={item.title}
+                  description={item.description}
+                />
+              ))}
+          </div>
+        </div>
+      ))}
       {selectedImage && (
         <Modal selectedImage={selectedImage} onClose={handleCloseModal} />
       )}
