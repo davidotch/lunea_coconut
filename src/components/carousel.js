@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { useSwipeable } from 'react-swipeable'
 import Modal from './subComponents/modal'
 import Images from './datas/imagesCarousel'
 import '../style/carousel.css'
@@ -10,10 +11,11 @@ const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedImage, setSelectedImage] = useState(null)
   const [imagesToShow, setImagesToShow] = useState(3)
+  const [activeDot, setActiveDot] = useState(0)
 
   useEffect(() => {
     const updateImagesToShow = () => {
-      if (window.innerWidth < 480) {
+      if (window.innerWidth < 768) {
         setImagesToShow(1)
       } else if (window.innerWidth < 940) {
         setImagesToShow(2)
@@ -38,11 +40,33 @@ const Carousel = () => {
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + imagesToShow) % Images.length)
+    setActiveDot((activeDot + 1) % Images.length)
   }
 
   const handlePrev = () => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - imagesToShow + Images.length) % Images.length
+    )
+    setActiveDot((activeDot - 1 + Images.length) % Images.length)
+  }
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => handleNext(),
+    onSwipedRight: () => handlePrev(),
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  })
+
+  const Dots = ({ activeIndex, imgCount }) => {
+    return (
+      <div className="carousel-dots">
+        {Array.from({ length: imgCount }).map((_, idx) => (
+          <div
+            key={idx}
+            className={`carousel-dot ${activeIndex === idx ? 'active' : ''}`}
+          />
+        ))}
+      </div>
     )
   }
 
@@ -51,7 +75,7 @@ const Carousel = () => {
       <div className="container" id="carousel">
         <h1>Mes Créations</h1>
         <div>
-          <div className="carousel-container">
+          <div {...handlers} className="carousel-container">
             {Images.slice(currentIndex, currentIndex + imagesToShow).map(
               (item, index) => (
                 <motion.div
@@ -82,6 +106,7 @@ const Carousel = () => {
             <FaArrowRight />
           </button>
         </div>
+        <Dots activeIndex={activeDot} imgCount={Images.length} />
       </div>
       {selectedImage && (
         <Modal selectedImage={selectedImage} onClose={handleCloseModal} />
