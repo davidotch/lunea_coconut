@@ -5,6 +5,7 @@ import Transition from '../transition'
 import Modal from '../components/subComponents/modal'
 
 import Collections from './datas/imagesShop' // Importez Collections
+import { Link } from 'react-router-dom'
 
 const Shop = () => {
   const [selectedImage, setSelectedImage] = useState(null)

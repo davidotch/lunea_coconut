@@ -30,6 +30,14 @@
   /* border: 1px solid #333; */
 }
 
+.search-icon {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+}
+
 .img-container img {
   height: 50vh;
   width: 100%;
@@ -169,6 +177,11 @@
 
   .img-container {
     width: 100%;
+  }
+
+  .search-icon {
+    display: block;
+    font-size: 18px;
   }
 
   .carousel-button {

@@ -54,6 +54,27 @@
     sans-serif;
 }
 
+/* search-icon  */
+
+.search-icon {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-content {
+    width: 100%;
+  }
+
+  .search-icon {
+    display: block;
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .card-content {
     width: 100%;

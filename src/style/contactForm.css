@@ -74,7 +74,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .containerForm {
+    height: 100%;
+  }
+
   .contact {
+    width: 100%;
     flex-direction: column;
     margin: 0;
   }

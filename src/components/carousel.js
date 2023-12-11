@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { useSwipeable } from 'react-swipeable'
 import Modal from './subComponents/modal'
 import Images from './datas/imagesCarousel'
+import { FaSearch } from 'react-icons/fa'
 import '../style/carousel.css'
 
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
@@ -81,6 +82,7 @@ const Carousel = () => {
                 <motion.div
                   key={item.id}
                   className="img-container"
+                  
                   onClick={() => handleOpenModal(index)}>
                   <motion.img
                     src={item.cover}
@@ -90,6 +92,7 @@ const Carousel = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1 }}
                   />
+                  <FaSearch className='search-icon' />
                   <div className="carousel-hover">
                     <p>Aperçu</p>
                   </div>
