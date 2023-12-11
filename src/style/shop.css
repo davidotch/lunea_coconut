@@ -1,5 +1,4 @@
 .shop-content {
-  height: 100vh;
   padding: 2rem;
   text-align: center;
 }
@@ -8,5 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 6rem;
 }
 
