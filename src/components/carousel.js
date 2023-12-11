@@ -93,8 +93,7 @@ const Carousel = () => {
                   <div className="carousel-hover">
                     <p>Aperçu</p>
                   </div>
-                  <p className="description">{item.title}</p>
-                  <p className="description">{item.description}</p>
+                  <h3 className="description">{item.title}</h3>
                 </motion.div>
               )
             )}

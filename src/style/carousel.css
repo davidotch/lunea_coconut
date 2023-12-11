@@ -46,7 +46,7 @@
 
 .carousel-hover {
   position: absolute;
-  top: 65%;
+  top: 70%;
   left: 10;
   width: 100%;
   height: 20%;
@@ -68,16 +68,10 @@
   animation: slide-down 0.5s forwards;
 }
 
-.carousel-hover p {
-  font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
-}
-
 .description {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
-  font-weight: lighter;
 }
 
 /* button  */

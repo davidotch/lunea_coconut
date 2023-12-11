@@ -5,7 +5,6 @@ const Images = [
         alt: 'Image 1',
         title: 'Vague',
         hovered: '../images/vague.jpg',
-        description: '30 x 40',
     },
     {
         id: 2,
@@ -13,7 +12,6 @@ const Images = [
         alt: 'Image 2 ',
         title: 'Paysage marin',
         hovered: '../images/mer.jpg',
-        description: '30 x 40',
     },
     {
         id: 3,
@@ -21,7 +19,6 @@ const Images = [
         alt: 'Image 3',
         title: 'Ponton',
         hovered: '../images/ponton.jpg',
-        description: '30 x 40',
     },
     {
         id: 4,
@@ -29,7 +26,6 @@ const Images = [
         alt: 'Image 4',
         title: 'Bouddha',
         hovered: '../images/buddha.jpg',
-        description: '30 x 40',
     },
     {
         id: 5,
@@ -37,7 +33,6 @@ const Images = [
         alt: 'Image 5',
         title: 'Chardonneret',
         hovered: '../images/oiseau.jpg',
-        description: '30 x 40',
     },
     {
         id: 6,
@@ -45,7 +40,6 @@ const Images = [
         alt: 'Image 6',
         title: 'Jour et Nuit',
         hovered: '../images/arbre_jour_nuit.jpg',
-        description: '30 x 40',
     },
 ]
 
