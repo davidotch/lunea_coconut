@@ -1,4 +1,4 @@
-const Images = [
+const ImagesEte = [
   {
     id: 1,
     title: 'Palmier',
@@ -22,4 +22,39 @@ const Images = [
   },
 ]
 
-export default Images
+const ImagesHiver = [
+  {
+    id: 1,
+    title: 'Palmier',
+    cover: '../canvy/3xtableau.jpg',
+    hovered: '../images/palmier.jpg',
+    description: '30 x   40',
+  },
+  {
+    id: 2,
+    title: "jeune fille au bord de l'eau",
+    cover: '../canvy/decorJeuneFille.jpg',
+    hovered: '../images/jeuneFille.jpg',
+    description: '30 x 40',
+  },
+  {
+    id: 3,
+    title: 'Montagne',
+    cover: '../canvy/decorMontagneMarine.jpg',
+    hovered: '../images/montagneMarine.jpg',
+    description: '30 x 40',
+  },
+]
+
+const Collections = [
+  {
+    title: 'Nostalgie d\'été',
+    images: ImagesEte,
+  },
+  {
+    title: 'Magie de l\'automne',
+    images: ImagesHiver,
+  },
+]
+
+export default Collections;
