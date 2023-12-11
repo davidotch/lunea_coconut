@@ -31,7 +31,7 @@ const Images = [
         id: 5,
         cover: '../canvy/The_kids_playroom.jpg',
         alt: 'Image 5',
-        title: 'Chardonneret',
+        title: 'Petit oiseau',
         hovered: '../images/oiseau.jpg',
     },
     {

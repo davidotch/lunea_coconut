@@ -48,11 +48,11 @@ const ImagesHiver = [
 
 const Collections = [
   {
-    title: 'Océan',
+    title: 'Nostalgie d\'été',
     images: ImagesEte,
   },
   {
-    title: "Légendes d'Automne",
+    title: "Légendes d'automne",
     images: ImagesHiver,
   },
 ]
