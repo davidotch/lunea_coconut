@@ -50,3 +50,9 @@
 .card-content h3 {
   color: #333;
 }
+
+@media screen and (max-width: 768px) {
+  .card-content {
+    width: 100%;
+  }
+}
