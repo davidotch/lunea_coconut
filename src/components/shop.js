@@ -4,13 +4,13 @@ import '../style/shop.css'
 import Transition from '../transition'
 import Modal from '../components/subComponents/modal'
 
-import Collections from './datas/imagesShop' // Importez Collections
+import Collections from './datas/imagesShop' // Import Collections
 
 const Shop = () => {
   const [selectedImage, setSelectedImage] = useState(null)
 
   const handleOpenModal = (collectionIndex, imageIndex) => {
-    setSelectedImage(Collections[collectionIndex].images[imageIndex]) // Utilisez Collections
+    setSelectedImage(Collections[collectionIndex].images[imageIndex]) // Utilise Collections
   }
 
   const handleCloseModal = () => {
@@ -21,7 +21,7 @@ const Shop = () => {
     <div className="shop-content">
       {Collections.map((collection, collectionIndex) => (
         <div key={collectionIndex}>
-          <h1>{collection.title}</h1> {/* Affichez le titre de la collection */}
+          <h1>{collection.title}</h1> {/* Affiche le titre de la collection */}
           <div className="shop-card">
             {collection.images &&
               collection.images.map((item, imageIndex) => (
@@ -31,6 +31,7 @@ const Shop = () => {
                   cover={item.cover}
                   title={item.title}
                   description={item.description}
+                  prix={item.prix}
                 />
               ))}
           </div>

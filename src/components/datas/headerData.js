@@ -5,7 +5,7 @@ export const HeaderData = [
         cName: 'nav-item',
     },
     {
-        title: 'Gallerie',
+        title: 'Boutique',
         path: '/shop',
         cName: 'nav-item',
     },
