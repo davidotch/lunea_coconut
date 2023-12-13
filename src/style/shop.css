@@ -10,6 +10,12 @@
   margin: 2rem 0 6rem 0;
 }
 
+h4 {  
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+}
+
 @media screen and (max-width: 768px) {
   .shop-card {
     flex-direction: column;

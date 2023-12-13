@@ -40,6 +40,7 @@ const Shop = () => {
       {selectedImage && (
         <Modal selectedImage={selectedImage} onClose={handleCloseModal} />
       )}
+      <h4>Pour toutes commandes me contacter</h4>
     </div>
   )
 }
