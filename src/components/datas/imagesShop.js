@@ -13,7 +13,7 @@ const ImagesEte = [
     cover: '../canvy/decorJeuneFille.jpg',
     hovered: '../images/jeuneFille.jpg',
     description: '21 x 29,7',
-    prix: '40€',
+    prix: 'Vendu',
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const ImagesHiver = [
     cover: "../canvy/Songe_d'automne.jpg",
     hovered: "../images/Songe d'automne.jpg",
     description: '21 x 29,7',
-    prix: '43€',
+    prix: 'vendu',
   },
   {
     id: 3,
