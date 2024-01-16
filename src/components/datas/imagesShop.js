@@ -5,7 +5,7 @@ const ImagesEte = [
     cover: '../canvy/3xtableau.jpg',
     hovered: '../images/palmier.jpg',
     description: '13 x 18',
-    prix: '10€',
+    prix: 'vendu',
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const ImagesHiver = [
     cover: "../canvy/Pont_d'automne.jpg",
     hovered: "../images/pont d'automne.jpg",
     description: '13 x 18',
-    prix: '10€',
+    prix: '5€',
   },
   {
     id: 2,
