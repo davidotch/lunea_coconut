@@ -2,7 +2,7 @@ import React from 'react'
 import { SocialList } from './datas/socialList'
 import '../style/social.css'
 
-const social = () => {
+const Social = () => {
     return (
         <div className="social">
             <ul>
@@ -24,4 +24,4 @@ const social = () => {
     )
 }
 
-export default social
+export default Social

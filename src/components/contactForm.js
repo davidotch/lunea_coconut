@@ -2,7 +2,7 @@ import React from 'react'
 import Transition from '../transition'
 import '../style/contactForm.css'
 
-const contact = () => {
+const Contact = () => {
     return (
         <div className="containerForm">
             <div className="contact" id="contact">
@@ -44,4 +44,4 @@ const contact = () => {
     )
 }
 
-export default Transition(contact)
+export default Transition(Contact)

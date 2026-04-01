@@ -2,7 +2,7 @@ import React from 'react'
 import '../style/about.css'
 import Transition from '../transition'
 
-const about = () => {
+const About = () => {
     return (
         <>
             <section className="about"></section>
@@ -35,4 +35,4 @@ const about = () => {
     )
 }
 
-export default Transition(about)
+export default Transition(About)
