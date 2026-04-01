@@ -39,11 +39,6 @@ const Home = () => {
             pour estomper les traits avec le bout du doigt et mêler ensemble les
             couleurs pour obtenir des demi-teintes.
           </p>
-          <p>
-            Mais la technique nécessite de l'artiste une habileté peu commune
-            pour estomper les traits avec le bout du doigt et mêler ensemble les
-            couleurs pour obtenir des demi-teintes.
-          </p>
         </div>
       </section>
     </>
